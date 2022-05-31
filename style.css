@@ -55,10 +55,26 @@ h1 {
     font-size: 50px;
     color: #fff;
 }
-p {
+.main p {
     font-size: 25px;
     line-height: 40px;
     color: #fff;
+}
+.catalogue-intr h2{
+    margin: 5% 40% 1%;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2.6px;
+    color: #3176f7;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.catalogue-intr h3{
+font-size: 32px;
+font-weight: 800;
+line-height: 1.44;
+color: #1b2b4b;
+margin:0 25% 5%;
 }
 .btn {
     padding: 15px 20px;
@@ -69,64 +85,97 @@ p {
     border: 0;
     cursor: pointer;
 }
-.icons {
-   display: grid;
-   grid-auto-flow: column;
-   width: 100%;
-   text-align: center;
-}
+.icons{
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+} 
 .icons li {
-    margin-right: 15%;
-    width: 100%;
     padding-top: 95px;
+    margin: 0 5%;
+   
 }
 .clock {
     background-image: url(images/icon-clock.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .click {
     background-image: url(images/click.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .hour24 {
     background-image: url(images/icon-24h.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .payment {
     background-image: url(images/icon-payment.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .shipping {
     background-image: url(images/icon-shipping.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .marketing {
     background-image: url(images/icon-marketing.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .phone {
     background-image: url(images/icon-phone.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .online-store {
     background-image: url(images/icon-online-store.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .heart {
     background-image: url(images/icon-heart.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
 }
 .world {
     background-image: url(images/icon-world.svg);
     background-repeat: no-repeat;
     background-size: 64px;
+    width: 10%;
+}
+.redirect{
+ margin: 4% 40%;
+
+}
+.button{
+    font-size: 18px;
+    padding: 21px 25px;
+    min-width: 230px;
+    letter-spacing: -0.2px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 31px;
+    font-weight: 600;
+    border: 2px solid #3075F6;
+    color: #3075F6;
+}
+.redirect p{
+    font-size: 18px;
+    line-height: 1.78;
+}
+.button:hover{
+    background: #3075F6;
+    color: #fff;
 }
