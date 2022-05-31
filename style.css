@@ -150,7 +150,7 @@ flex-wrap: wrap;
     background-size: 64px;
     width: 10%;
 }
-.world {
+.world{
     background-image: url(images/icon-world.svg);
     background-repeat: no-repeat;
     background-size: 64px;
@@ -179,3 +179,41 @@ flex-wrap: wrap;
     background: #3075F6;
     color: #fff;
 }
+/*
+Sign-up css
+*/
+
+.mozello-title{
+    text-align: center;
+    color: #1b2b4b;
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    margin:2% 30%;
+    background: rgba(255, 255, 255, 1);
+    gap: 15px;
+    height: 80vh;
+}
+input,select,label{
+height: 30px;
+border-radius: 6px;
+margin:0 3%;
+}
+.sign-up-form h2{
+    color: #000121;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin:22px 3%;
+}
+.sign-up-button{
+    background: green;
+    color: #fff;
+    height: 40px;
+    border-radius: 6px;
+    margin:2% 3%;
+    border: 0;
+}
+
+
