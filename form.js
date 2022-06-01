@@ -1,6 +1,27 @@
 //Email validation
+const contactForm = document.querySelector('#contactForm');
+const email = contactForm.elements.email;
+const validationMassege = contactForm.querySelector('.error');
+validationMassege.style.color = 'red';
+validationMassege.style.backgroundColor = '#fff'
+validationMassege.style.fontSize = '20px';
+validationMassege.style.padding = '0 0 0 10px';
+validationMassege.style.borderRadius = '2px';
 
-
+contactForm.addEventListener('submit', (event) => {
+  let isValid = false;
+  if (email.value === email.value.toLowerCase()) {
+    isValid = true;
+  }
+  if (isValid === false) {
+    event.preventDefault();
+    validationMassege.innerText = 'Only Lower Case Symbols Allowed';
+    setTimeout(() => {
+      validationMassege.textContent = '';
+    }, 5000);
+  }
+});
+//End of Email Validation
 
 // password validation
 const myInput = document.getElementById("psw");
@@ -61,3 +82,4 @@ myInput.onkeyup = function() {
   }
 }
 //End of password validation
+
