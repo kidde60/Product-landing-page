@@ -195,10 +195,20 @@ Sign-up css
     gap: 15px;
     height: 80vh;
 }
-input,select,label{
-height: 30px;
+input, select {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 3% 16px;
+    font-size: 20px;
+}
+label{
+ height: 30px;
 border-radius: 6px;
 margin:0 3%;
+font-size: 25px;
 }
 .sign-up-form h2{
     color: #000121;
@@ -208,12 +218,49 @@ margin:0 3%;
     margin:22px 3%;
 }
 .sign-up-button{
+    padding: 12px;
     background: green;
     color: #fff;
     height: 40px;
     border-radius: 6px;
     margin:2% 3%;
     border: 0;
+    font-size: 18PX;
 }
-
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "\2714";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "\2716";
+  }
 
