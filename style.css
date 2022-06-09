@@ -12,7 +12,21 @@ body {
     height: 2px;
     margin: 6px auto;
     background-color: #fff;
+    transition: all .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
+/* Rotate first span */
+.nav[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+/* Hide second span */
+.nav[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+/* Rotate third span */
+.nav[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* nav {
     display: flex;
     justify-content: space-between;
