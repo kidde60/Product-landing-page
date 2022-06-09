@@ -9,19 +9,21 @@
     <title>Product landing page</title>
 </head>
 <body>
-    <header class="navbar navbar-expand-lg navbar-dark mt-3 mx-3 mb-0 bg-secondary">
-        <div class="container d-flex">
-            <a class="logo" href="#">LOGO</a>
-            <button type="button" class="nav bg-secondary d-block border-0" data-bs-toggle="collapse"
-            data-bs-target="#navmenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <header class="navbar navbar-expand-lg navbar-dark text-white bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOGO</a>
+          <button class="nav d-block bg-secondary border-0" type="button" 
+           data-bs-toggle="collapse"
+           data-bs-target="#navmenu"
+           aria-controls="navmenu" 
+           aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        
-        <nav class="collapse" id="navmenu">
-            <ul class="d-block justify-content-end">
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">E-commerce</a></li>
                 <li><a href="#">Examples</a></li>
@@ -29,12 +31,7 @@
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
-
-            <div class="details d-none">
-               <a class="log-in" href="#">Log in</a>
-               <a class="sign-up" href="signup.html">Sign up</a> 
-            </div>
-        </nav>
+        </div>
     </header>
     <section class="header">
         <img src="/images.jpg" alt="">
