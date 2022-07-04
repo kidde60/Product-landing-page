@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozello: Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background:rgba(240,240,240,0.8);">
+    <h1 class="mozello-title">Mozello</h1>
+    <form id="contactForm" action="https://formspree.io/f/mnqwoyza" method="POST" class="sign-up-form">
+      <h2>Create your new website</h2>
+      <label for="email">Enter your e-mail</label>
+      <input type="email" name="email" id="email" required>
+      <label for="psw">Password</label>
+      <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+        <div id="message">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div>
+      <label for="about">What is this website about?</label>
+        <select name="about" id="about">
+            <option value="website">Website</option>
+            <option value="online-store">Online-Store</option>
+            <option value="blog">Blog</option>
+            <option value="other">Other</option>
+        </select>
+      <small class="error"></small>
+      <button class="sign-up-button" type="submit"> Create My Website</button>
+      <a href=""><p style="text-align: center;">Edit Existing Website</p></a>
+    </form>
+<script src="form.js"></script>
+</body>
+</html>
