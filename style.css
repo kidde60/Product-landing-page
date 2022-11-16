@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* header {
+    display: flex;
+    margin: 20px 30px 0;
+} */
+.nav span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: #fff;
+    transition: all .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+/* Rotate first span */
+.nav[aria-expanded="true"] span:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+/* Hide second span */
+.nav[aria-expanded="true"] span:nth-of-type(2) {
+    opacity: 0;
+}
+/* Rotate third span */
+.nav[aria-expanded="true"] span:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    font-size: 20px;
+} */
+/* ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 0;
+    list-style: none;
+    
+} */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.log-in {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: lightgray;
+    border-radius: 30px;
+}
+.sign-up {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #3075F6;
+    border-radius: 30px;
+    color: #f1f1f1;
+}
+.header {
+    position: relative;
+    padding-top: 30px;
+}
+.header img {
+    width: 100%;
+    height: 600px;
+}
+.main {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 16px;
+    
+}
+h1 {
+    font-size: 50px;
+    color: #fff;
+}
+.main p {
+    font-size: 25px;
+    line-height: 40px;
+    color: #fff;
+}
+.catalogue-intr h2{
+    margin: 5% 40% 1%;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2.6px;
+    color: #3176f7;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.catalogue-intr h3{
+font-size: 32px;
+font-weight: 800;
+line-height: 1.44;
+color: #1b2b4b;
+margin:0 25% 5%;
+}
+.btn {
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 40px;
+    background: #3075F6;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+.icons{
+width: 100%;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+} 
+.icons li {
+    padding-top: 95px;
+    margin: 0 5%;
+   
+}
+.clock {
+    background-image: url(images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.click {
+    background-image: url(images/click.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.hour24 {
+    background-image: url(images/icon-24h.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.payment {
+    background-image: url(images/icon-payment.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.shipping {
+    background-image: url(images/icon-shipping.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.marketing {
+    background-image: url(images/icon-marketing.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.phone {
+    background-image: url(images/icon-phone.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.online-store {
+    background-image: url(images/icon-online-store.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.heart {
+    background-image: url(images/icon-heart.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.world{
+    background-image: url(images/icon-world.svg);
+    background-repeat: no-repeat;
+    background-size: 64px;
+    width: 10%;
+}
+.redirect{
+ margin: 4% 40%;
+
+}
+.button{
+    font-size: 18px;
+    padding: 21px 25px;
+    min-width: 230px;
+    letter-spacing: -0.2px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 31px;
+    font-weight: 600;
+    border: 2px solid #3075F6;
+    color: #3075F6;
+}
+.redirect p{
+    font-size: 18px;
+    line-height: 1.78;
+}
+.button:hover{
+    background: #3075F6;
+    color: #fff;
+}
+/*
+Sign-up css
+*/
+
+.mozello-title{
+    text-align: center;
+    color: #1b2b4b;
+}
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+    margin:2% 30%;
+    background: rgba(255, 255, 255, 1);
+    gap: 15px;
+    height: 80vh;
+}
+input, select {
+    width: 95%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 3% 16px;
+    font-size: 20px;
+}
+label{
+ height: 30px;
+border-radius: 6px;
+margin:0 3%;
+font-size: 25px;
+}
+.sign-up-form h2{
+    color: #000121;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin:22px 3%;
+}
+.sign-up-button{
+    padding: 12px;
+    background: green;
+    color: #fff;
+    height: 40px;
+    border-radius: 6px;
+    margin:2% 3%;
+    border: 0;
+    font-size: 18PX;
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "\2714";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "\2716";
+  }
+
